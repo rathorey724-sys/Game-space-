@@ -1,0 +1,13 @@
+package com.example.gamespace.data
+
+import android.graphics.drawable.Drawable
+
+data class GameModel(
+    val packageName: String,
+    val appName: String,
+    val icon: Drawable?,
+    var profile: PerformanceProfile = PerformanceProfile.BALANCED
+)
+
+enum class PerformanceProfile {
+    BALANCED, PERFORMANCE, BATTERY_SAVER
